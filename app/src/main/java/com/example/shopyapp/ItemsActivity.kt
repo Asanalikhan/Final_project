@@ -2,6 +2,7 @@ package com.example.shopyapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class ItemsActivity : AppCompatActivity() {
@@ -12,8 +13,12 @@ class ItemsActivity : AppCompatActivity() {
         val itemsList: RecyclerView = findViewById(R.id.itemsList)
         val items = arrayListOf<Item>()
 
-        items.add(Item(1, "", "", "", "", 100))
-        items.add(Item(2, "", "", "", "", 200))
-        items.add(Item(3, "", "", "", "", 300))
+
+        items.add(Item(1, "bed", "", "", "", 100))
+        items.add(Item(2, "sofa", "", "", "", 200))
+        items.add(Item(3, "kitchen", "", "", "", 300))
+
+        itemsList.layoutManager = LinearLayoutManager(this)
+        itemsList.adapter = ItemsAdapter(items, this)
     }
 }
