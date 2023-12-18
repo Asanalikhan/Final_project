@@ -9,15 +9,17 @@ import android.os.Handler
 import android.os.Looper
 import android.widget.ImageView
 import android.widget.TextView
+import com.bumptech.glide.Glide
 import com.squareup.picasso.Picasso
+import java.io.InputStream
+import java.net.URL
 
 class ItemActivity : AppCompatActivity() {
-    var image: ImageView? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_item)
 
-        image = findViewById(R.id.item_list_image_one)
+        val image: ImageView = findViewById(R.id.item_list_image_one)
         val title: TextView = findViewById(R.id.item_list_title_one)
         val text: TextView = findViewById(R.id.item_list_text)
 
@@ -25,7 +27,7 @@ class ItemActivity : AppCompatActivity() {
         title.text = intent.getStringExtra("itemTitle")
         text.text = intent.getStringExtra("itemText")
 
-        var imageUrl = "https://images.unsplash.com/photo-1702573848697-9f21d2d74049?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        Picasso.get().load(imageUrl).into(image)
+        var imageUrl = "https://as2.ftcdn.net/v2/jpg/00/89/35/35/1000_F_89353593_1gvsjf4dyoxIzhyR31uh0l5ifJ4T3WHv.jpg"
+        Glide.with(this).load(imageUrl).into(image)
     }
 }
