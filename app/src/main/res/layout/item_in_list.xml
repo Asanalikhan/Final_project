@@ -5,18 +5,24 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:paddingBottom="20dp"
-    android:background="#28733F"
+    android:background="@drawable/shape"
     android:layout_marginBottom="20dp"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="15dp"
+    android:layout_marginTop="40dp"
+
+    >
 
 
     <ImageView
         android:id="@+id/item_list_image"
         android:layout_width="match_parent"
         android:layout_height="200dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginVertical="10dp"
         android:scaleType="centerCrop"
         app:srcCompat="@drawable/bed"
-        android:padding="20dp"
         />
     <TextView
         android:id="@+id/item_list_title"
