@@ -29,7 +29,8 @@ class ItemActivity : AppCompatActivity() {
         text.text = intent.getStringExtra("itemText")
         desc.text = intent.getStringExtra("itemDesc")
 
-        var imageUrl = "https://as2.ftcdn.net/v2/jpg/00/89/35/35/1000_F_89353593_1gvsjf4dyoxIzhyR31uh0l5ifJ4T3WHv.jpg"
-        Glide.with(this).load(imageUrl).into(image)
+        val imageId = intent.getStringExtra("itemImage")
+        Glide.with(this).load(imageId).into(image)
+
     }
 }
