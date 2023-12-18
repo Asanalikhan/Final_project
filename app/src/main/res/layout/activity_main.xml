@@ -11,11 +11,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#fdfdfd"
+        android:textColor="#e2a600"
         android:layout_gravity="center"
         android:layout_marginTop="170dp"
         android:textSize="25sp"
         android:textStyle="bold"
+        android:fontFamily="serif"
         android:text="Create new account" />
 
     <EditText
@@ -65,7 +66,8 @@
         android:textStyle="bold"
         android:layout_gravity="center"
         android:backgroundTint="#e2a600"
-        android:layout_marginTop="30dp"/>
+        android:layout_marginTop="30dp"
+        />
 
     <TextView
         android:id="@+id/link_to_auth"

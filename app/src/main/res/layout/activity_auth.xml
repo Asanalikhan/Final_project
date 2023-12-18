@@ -11,12 +11,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#e2a600"
         android:layout_gravity="center"
         android:layout_marginTop="170dp"
+        android:fontFamily="serif"
+        android:text="Authorization"
+        android:textColor="#e2a600"
         android:textSize="25sp"
-        android:textStyle="bold"
-        android:text="Authorization" />
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/user_login_auth"
