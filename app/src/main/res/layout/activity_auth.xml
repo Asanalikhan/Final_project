@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#3B9456"
+    android:background="#7AC8B9A9"
     tools:context=".AuthActivity">
 
     <TextView
@@ -55,7 +55,7 @@
         android:text="Authorization"
         android:textStyle="bold"
         android:layout_gravity="center"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#A85940"
         android:textColor="#fff"
         android:layout_marginTop="30dp"/>
 

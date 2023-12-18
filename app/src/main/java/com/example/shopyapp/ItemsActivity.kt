@@ -14,9 +14,9 @@ class ItemsActivity : AppCompatActivity() {
         val items = arrayListOf<Item>()
 
 
-        items.add(Item(1, "bed", "Bed", "for best speeping", "You can buy it with discount", -200))
-        items.add(Item(2, "sofa", "", "", "", 199))
-        items.add(Item(3, "kitchen", "", "", "", 299))
+        items.add(Item(1, "bed", "Bed", "for best sleeping", "You can buy it with discount", 399))
+        items.add(Item(2, "sofa", "Sofa", "for the best sitting", "You can buy it with discount", 199))
+        items.add(Item(3, "kitchen", "Kitchen", "the best furniture", "You can buy it with discount", 299))
 
         itemsList.layoutManager = LinearLayoutManager(this)
         itemsList.adapter = ItemsAdapter(items, this)

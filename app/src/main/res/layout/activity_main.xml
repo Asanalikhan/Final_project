@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#3B9456"
+    android:background="#7AC8B9A9"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -60,12 +60,12 @@
 
     <Button
         android:id="@+id/button_reg"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:backgroundTint="#e2a600"
-        android:text="Registration"
+        android:backgroundTint="#A85940"
+        android:text="Sing Up"
         android:textStyle="bold" />
 
     <TextView
