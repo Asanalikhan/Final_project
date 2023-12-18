@@ -47,6 +47,8 @@ class ItemsAdapter(var items: List<Item>, var context: Context): RecyclerView.Ad
             intent.putExtra("itemImage", items[position].image)
             intent.putExtra("itemTitle", items[position].title)
             intent.putExtra("itemText", items[position].text)
+            intent.putExtra("itemPrice", items[position].price).toString()
+            intent.putExtra("itemDesc", items[position].desc)
 
             context.startActivity(intent)
         }

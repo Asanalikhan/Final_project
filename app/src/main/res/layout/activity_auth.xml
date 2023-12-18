@@ -12,31 +12,41 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="serif"
-        android:text="Authorization"
+        android:text=" Authorization"
         android:textColor="#e2a600"
-        android:textSize="25sp"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="serif"
+        android:text="Welcome back!"
+        android:textColor="#e2a600"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/user_login_auth"
-        android:layout_width="220dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="text"
         android:hint="type your login"
         android:fontFamily="serif"
         android:textColorHint="#6a6a6a"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:layout_gravity="center"
-        android:textColor="#fdfdfd"
+        android:textSize="20sp"
+        android:textColor="#605B5B"
         />
 
 
     <EditText
         android:id="@+id/user_pass_auth"
-        android:layout_width="220dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:ems="10"
         android:inputType="textPassword"
@@ -44,31 +54,39 @@
         android:hint="type your password"
         android:textColorHint="#6a6a6a"
         android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:layout_gravity="center"
-        android:textColor="#fdfdfd"
+        android:textColor="#605B5B"
         />
-
-    <Button
-        android:id="@+id/button_auth"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:text="Authorization"
-        android:textStyle="bold"
-        android:layout_gravity="center"
-        android:backgroundTint="#A85940"
-        android:textColor="#fff"
-        android:layout_marginTop="30dp"/>
-
-    <TextView
-
-        android:id="@+id/link_to_reg"
+    <GridLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="120dp"
-        android:text="Registration"
-        android:fontFamily="serif"
-        android:textColor="#e2a600"
-        android:textSize="17sp" />
+        android:layout_marginTop="50dp">
+
+        <Button
+            android:id="@+id/button_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Authorization"
+            android:backgroundTint="#A85940"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/link_to_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:layout_margin="20dp"
+            android:text="Registration"
+            android:backgroundTint="#A85940"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+    </GridLayout>
+
+
 
 </LinearLayout>

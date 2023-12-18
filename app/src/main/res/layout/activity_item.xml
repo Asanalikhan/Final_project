@@ -1,36 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#7AC8B9A9"
-    tools:context=".ItemActivity">
+    tools:context=".ItemActivity"
+    >
 
     <ImageView
+        app:cardCornerRadius="8dp"
         android:id="@+id/item_list_image_one"
-        android:layout_width="match_parent"
+        android:layout_width="370dp"
         android:layout_height="200dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/shape"
         android:layout_marginVertical="10dp"
-        android:scaleType="centerCrop"/>
+        android:layout_gravity="center"
+        />
 
     <TextView
-        android:iwd="@+id/item_list_title_one"
+        android:id="@+id/item_list_title_one"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingVertical="10dp"
         android:paddingHorizontal="20dp"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:text="TextView" />
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/item_list_text"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:paddingVertical="10dp"
+        android:paddingHorizontal="20dp"
+        android:text="TextView" />
+    <TextView
+        android:id="@+id/item_list_desc_one"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="17sp"
         android:paddingVertical="10dp"
@@ -45,4 +55,4 @@
         android:backgroundTint="#A85940"
         android:text="Buy" />
 
-</LinearLayout>
+</GridLayout>
