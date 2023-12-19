@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     tools:context=".ItemActivity"
-    android:backgroundTint="#7A453E37"
+    android:backgroundTint="#DDE9EF"
     >
 
     <ImageView
@@ -52,6 +52,6 @@
         android:layout_gravity="center"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:backgroundTint="#A85940"
+        android:backgroundTint="#246EE9"
         android:text="Watch" />
 </GridLayout>

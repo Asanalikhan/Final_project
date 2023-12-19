@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#7A453E37"
+    android:background="#DDE9EF"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -12,11 +12,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="100dp"
         android:fontFamily="serif"
         android:text="Don't have a account?!"
-        android:textColor="#e2a600"
-        android:textSize="25sp"
+        android:textColor="#246EE9"
+        android:textSize="30sp"
         android:textStyle="bold" />
     <TextView
         android:layout_width="wrap_content"
@@ -24,70 +24,81 @@
         android:layout_gravity="center"
         android:fontFamily="serif"
         android:text="Create new."
-        android:textColor="#e2a600"
-        android:textSize="25sp"
+        android:textColor="#246EE9"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <EditText
         android:id="@+id/user_login"
-        android:layout_width="220dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:ems="10"
         android:fontFamily="serif"
         android:hint="type your login"
         android:inputType="text"
         android:textColor="#fdfdfd"
-        android:textColorHint="#6a6a6a" />
+        android:textColorHint="#504E4E" />
 
     <EditText
         android:id="@+id/user_email"
-        android:layout_width="220dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
         android:ems="10"
+        android:textSize="20sp"
         android:fontFamily="serif"
         android:hint="type your email"
         android:inputType="textEmailAddress"
         android:textColor="#fdfdfd"
-        android:textColorHint="#6a6a6a" />
+        android:textColorHint="#504E4E" />
 
     <EditText
         android:id="@+id/user_pass"
-        android:layout_width="220dp"
+        android:layout_width="250dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
+        android:textSize="20sp"
         android:layout_marginTop="20dp"
         android:ems="10"
         android:fontFamily="serif"
         android:hint="type your password"
         android:inputType="textPassword"
         android:textColor="#fdfdfd"
-        android:textColorHint="#6a6a6a" />
+        android:textColorHint="#504E4E" />
 
-    <Button
-        android:id="@+id/button_reg"
-        android:layout_width="220dp"
+    <GridLayout
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        android:backgroundTint="#A85940"
-        android:text="Sing Up"
-        android:textStyle="bold"
-        android:textSize="17sp"/>
+        android:layout_marginTop="30dp">
 
-    <Button
-        android:id="@+id/link_to_auth"
-        android:layout_width="220dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:fontFamily="serif"
-        android:text="Authorization"
-        android:textStyle="bold"
-        android:backgroundTint="#A85940"
-        android:textSize="17sp" />
+        <Button
+            android:id="@+id/button_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:backgroundTint="#246EE9"
+            android:text="Sing Up"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/link_to_auth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Authorization"
+            android:textStyle="bold"
+            android:backgroundTint="#246EE9"
+            android:textSize="17sp" />
+    </GridLayout>
+
+
 
 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background= "#7A453E37"
+    android:background= "#DDE9EF"
     tools:context=".AuthActivity">
 
     <TextView
@@ -15,7 +15,7 @@
         android:layout_marginTop="100dp"
         android:fontFamily="serif"
         android:text=" Authorization"
-        android:textColor="#e2a600"
+        android:textColor="#246EE9"
         android:textSize="30sp"
         android:textStyle="bold" />
     <TextView
@@ -24,7 +24,7 @@
         android:layout_gravity="center"
         android:fontFamily="serif"
         android:text="Welcome back!"
-        android:textColor="#e2a600"
+        android:textColor="#246EE9"
         android:textSize="30sp"
         android:textStyle="bold" />
 
@@ -52,11 +52,11 @@
         android:inputType="textPassword"
         android:fontFamily="serif"
         android:hint="type your password"
-        android:textColorHint="#6a6a6a"
+        android:textColorHint="#494747"
         android:layout_marginTop="20dp"
         android:textSize="20sp"
         android:layout_gravity="center"
-        android:textColor="#605B5B"
+        android:textColor="#494747"
         />
     <GridLayout
         android:layout_width="wrap_content"
@@ -70,7 +70,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Authorization"
-            android:backgroundTint="#A85940"
+            android:backgroundTint="#246EE9"
             android:textSize="10sp"
             android:textStyle="bold" />
 
@@ -82,7 +82,7 @@
             android:fontFamily="serif"
             android:layout_margin="20dp"
             android:text="Registration"
-            android:backgroundTint="#A85940"
+            android:backgroundTint="#246EE9"
             android:textSize="10sp"
             android:textStyle="bold" />
     </GridLayout>
